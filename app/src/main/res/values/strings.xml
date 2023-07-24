@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DAO Pattern</string>
+    <string name="text_name">Name</string>
+    <string name="text_email">Email</string>
+    <string name="text_description">Image avatar</string>
+    <string name="text_btn_des">Add new user</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Name</string>
+    <string name="text_btn_add">Add</string>
+    <string name="text_btn_cancel">Cancel</string>
+    <string name="text_user_info">User Information</string>
+    <string name="des_option">Option menu</string>
+    <string name="menu_update">Update</string>
+    <string name="menu_delete">Delete</string>
+    <string name="text_confirmation">Are you sure?</string>
+    <string name="text_confirm">Confirm</string>
+    <string name="text_cancel">Cancel</string>
+</resources>
