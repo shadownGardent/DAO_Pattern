@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
+        // be,,
         viewModel.users.observe(this) {
             binding.recyclerUser.adapter?.notifyDataSetChanged()
         }
