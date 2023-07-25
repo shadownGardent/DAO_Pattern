@@ -5,8 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.dao_pattern.R
-import com.example.dao_pattern.data.User
 import com.example.dao_pattern.databinding.ActivityMainBinding
 import com.example.dao_pattern.newuser.NewUserActivity
 import com.example.dao_pattern.ui.adapter.UserAdapter
