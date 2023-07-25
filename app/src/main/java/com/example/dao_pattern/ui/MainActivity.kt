@@ -10,6 +10,7 @@ import com.example.dao_pattern.data.User
 import com.example.dao_pattern.databinding.ActivityMainBinding
 import com.example.dao_pattern.newuser.NewUserActivity
 import com.example.dao_pattern.ui.adapter.UserAdapter
+import com.example.dao_pattern.ui.dialog.ConfirmationDialogFragment
 import com.example.dao_pattern.ui.viewmodel.UserViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -25,14 +26,15 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerUser.adapter = UserAdapter(viewModel.users.value!!,
         object: OptionMenuClickListener {
             override fun update(index: Int) {
-                TODO("Not yet implemented")
+                ConfirmationDialogFragment(Action.UPDATE, index)
+                    .show(supportFragmentManager, "TAG")
             }
 
             override fun delete(index: Int) {
-                TODO("Not yet implemented")
+                ConfirmationDialogFragment(Action.DELETE, index)
+                    .show(supportFragmentManager, "TAG")
             }
         })
-        // be,,
         viewModel.users.observe(this) {
             binding.recyclerUser.adapter?.notifyDataSetChanged()
         }

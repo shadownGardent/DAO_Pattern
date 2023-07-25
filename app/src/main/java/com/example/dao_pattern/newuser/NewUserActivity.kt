@@ -18,6 +18,7 @@ class NewUserActivity : AppCompatActivity() {
             val email = binding.txtUserEmail.text.toString()
             val viewModel = UserViewModel.getInstance()
             viewModel.addNewUser(name, email)
+            finish()
         }
     }
 }
